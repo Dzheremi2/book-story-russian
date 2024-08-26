@@ -1,0 +1,534 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Book sources -->
+    <string-array name="book_sites" tools:ignore="InconsistentArrays">
+        <item>Архів Анни|https://uk.annas-archive.org</item>
+        <item>Укрліб|https://www.ukrlib.com.ua</item>
+    </string-array>
+
+    <!-- Notifications -->
+    <string name="updates_notification_channel">Новый Обновления</string>
+    <string name="updates_notification_title">Новое обновление Book\'s Story</string>
+    <string name="updates_notification_desc">"         Обновление %1$s вышло!         Нажмите, чтобы перейти на страницу релиза.     "</string>
+    <string name="updates_notification_action">"         Скачать     "</string>
+
+    <!-- Screens -->
+    <string name="library_screen">Библиотека</string>
+    <string name="history_screen">История</string>
+    <string name="browse_screen">Поиск</string>
+    <string name="settings_screen">Настройки</string>
+    <string name="about_screen">О приложении</string>
+    <string name="help_screen">Помощь</string>
+
+    <!-- Dialog Labels -->
+    <string name="storage_permission">Выдать разрешение?</string>
+    <string name="add_books">Добавить книги?</string>
+    <string name="move_books">Переместить книги?</string>
+    <string name="delete_books">Удалить книги?</string>
+    <string name="delete_book">Удалить книгу?</string>
+    <string name="move_book">Переместить книгу?</string>
+    <string name="delete_history">Удалить историю чтения?</string>
+    <string name="confirm_update">Подтвердить обновление?</string>
+    <string name="enable_check_for_updates">Включить проверку на обновления?</string>
+
+    <!-- Dialog Descriptions -->
+    <string name="storage_permission_description">"         Нвм нужен доступ к хранилищу устроуства, чтобы просканировать его на наличие книг.         Буз этого разрешения вы не сможете добавить книгу.     "</string>
+    <string name="add_books_description">"         Вы можете выбрать, какие книги вы хотите добавить.         Вы сможете отредактировать заглавие и обложку позднее.         Процесс загрузки может занять до нескольких минут.     "</string>
+    <string name="move_books_description">"         Выберите категорию в которую вы хотите переместить выбранные книги(%1$s).         Все выбранные книги будут перемещены в выбранную категорию.     "</string>
+    <string name="delete_books_description">"         Это удалит выбранные книги (%1$s) из базы данных.         Книги не удаляться с вашего устройства.     "</string>
+    <string name="delete_book_description">"         Это удалит книгу из базы данных.         Это не удалит книгу с вашего устройства.     "</string>
+    <string name="move_book_description">"         Выберите категорию в которую хотите переместить книгу.         Книга будет перемещена в выбранную категорию.     "</string>
+    <string name="delete_history_description">"         Это удалит всю историю из базы данных.         После удаления истории порядок книг будет сброшен.     "</string>
+    <string name="confirm_update_description">"         При подтверждении, текст этой книги будет обновлён.         Пожалуйста, запомните где вы остановились перед обновлением текста.     "</string>
+    <string name="update_app_description">"         Новая версия Book's Story была найдена.         Желаете скачать её?         Нажав на кнопку «Скачать», вы перейдёте в ваш браузер         и автоматически скачаете последнее обновление.     "</string>
+    <string name="enable_check_for_updates_description">"         Включая «Проверку на обновления» приложение будет получать информацию о последнем релизе         из «api.github.com» каждый раз, при перезапуске приложения.         Хотите продолжить и включить «Проверку на обновления»?     "</string>
+
+    <!-- Errors -->
+    <string name="error_permission">"         Нам нужен доступ к хранилищу для сканирования вашего устройства на наличие книг     "</string>
+    <string name="error_no_description">"         Нет описания.     "</string>
+    <string name="error_something_went_wrong">"         Что-то пошло не так.     "</string>
+    <string name="error_something_went_wrong_with_file">"         Что-то пошло не так. Пожалуйста, проверьте файл книги на отсутствие повреждений.     "</string>
+    <string name="error_wrong_file_format">Неправильный формат файла.</string>
+    <string name="error_query">Ошибка: %1$s</string>
+    <string name="error_file_empty">Этот файл пуст или повреждён.</string>
+    <string name="error_no_translator">Не найдено приложения для перевода.</string>
+    <string name="error_no_dictionary">Не найдено приложения словаря.</string>
+    <string name="error_no_browser">Не найдено приложение браузера.</string>
+    <string name="error_no_share_app">Не найдено приложение, чтобы поделиться.</string>
+    <string name="error_no_text">"         Содержимое книги пусто. Пожалуйста, проверьте содержимое книги и обновите её.     "</string>
+    <string name="error_check_internet">"         Что-то пошло не так.         Попробуйте позже.     "</string>
+    <string name="error_could_not_reset_cover">Не удалось сбросить обложку.</string>
+    <string name="error_closed_source">Закрытый код</string>
+
+    <!-- Is Empty messages -->
+    <string name="browse_empty">"         Расширьте книжную библиотеку своими загрузками     "</string>
+    <string name="library_empty">"         Читайте ваши любимые книги и сортируйте их по категориям     "</string>
+    <string name="history_empty">"         Пусть ваша последняя книга откроет перед         вами страницы новой великой истории вашего читательского приключения     "</string>
+
+    <!-- Query strings -->
+    <string name="selected_items_count_query">%1$s выбрано</string>
+    <string name="search_query">Найти %1$s…</string>
+    <string name="read_query">%1$s прочитано</string>
+    <string name="file_path_query">Путь к фалу: %1$s</string>
+    <string name="update_query">Обновление %1$s</string>
+    <string name="color_preset_query">Предустановка %1$s</string>
+    <string name="color_preset_selected_query">Выбрано «%1$s»</string>
+
+    <!-- Action Texts -->
+    <string name="cancel">Отменить</string>
+    <string name="grant">Выдать</string>
+    <string name="grant_permission">Выдать разрешение</string>
+    <string name="get_help">Мне нужна помощь</string>
+    <string name="add">Добавить</string>
+    <string name="add_book">Добавить книгу</string>
+    <string name="move">Переместить</string>
+    <string name="delete">Удалить</string>
+    <string name="start">Начать</string>
+    <string name="continue_read">Продолжить</string>
+    <string name="never">Никогда</string>
+    <string name="go_back">Назад</string>
+    <string name="move_to_read">Переместить книгу в «Прочитано»</string>
+    <string name="back_to_library">Назад в Библиотеку</string>
+    <string name="undo">Отменить действие</string>
+    <string name="copy">Копировать</string>
+    <string name="translate">Перевести</string>
+    <string name="dictionary">Словарь</string>
+    <string name="retry">Попробовать снова</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="next">Далее</string>
+    <string name="yes_go_to_help">Да, перейти в Помощь</string>
+    <string name="no">Нет</string>
+    <string name="download">Скачать</string>
+    <string name="done">Готово</string>
+    <string name="enable">Включить</string>
+    <string name="web_search">Веб-поиск</string>
+    <string name="share">Поделиться</string>
+
+    <!-- Items -->
+    <string name="files">файлы</string>
+    <string name="books">книги</string>
+
+    <!-- Book -->
+    <string name="history">историю</string>
+    <string name="unknown_author">Неизвестный</string>
+    <string name="read_more">Вам следует больше читать!</string>
+    <string name="read_keep">Так держать!</string>
+    <string name="read_done">Отлично, вы прочли целую книгу!</string>
+    <string name="reset_cover">Сбросить обложку</string>
+    <string name="reset_cover_desc">Сбросить обложку до стандартной</string>
+    <string name="change_cover">Изменить обложку</string>
+    <string name="change_cover_desc">Выберите новую обложку из ваших фото</string>
+    <string name="delete_cover">Удалить обложку</string>
+    <string name="delete_cover_desc">Удалить текущую обложку книги</string>
+    <string name="author">Автор</string>
+
+    <!-- Tabs -->
+    <string name="reading_tab">Читаю</string>
+    <string name="already_read_tab">Прочитано</string>
+    <string name="planning_tab">В планах</string>
+    <string name="dropped_tab">Заброшено</string>
+    <string name="general_tab">Основные</string>
+    <string name="color_tab">Цвета</string>
+    <string name="filter_tab">Фильтр</string>
+    <string name="sort_tab">Сортировка</string>
+
+    <!-- Settings categories -->
+    <string name="general_settings">Основные</string>
+    <string name="general_settings_desc">Язык приложения</string>
+    <string name="appearance_settings">Внешний вид</string>
+    <string name="appearance_settings_desc">Тема, цвета</string>
+    <string name="reader_settings">Читалка</string>
+    <string name="reader_settings_desc">Шрифт, текст, переводчик</string>
+    <string name="browse_settings">Поиск</string>
+    <string name="browse_settings_desc">Основные, фильтр, сортировка</string>
+
+    <!-- Settings subcategories -->
+    <string name="font_reader_settings">Шрифт</string>
+    <string name="text_reader_settings">Текст</string>
+    <string name="translator_reader_settings">Переводчик</string>
+    <string name="theme_appearance_settings">Настройки тем</string>
+    <string name="colors_appearance_settings">Цвета</string>
+    <string name="general_browse_settings">Основные</string>
+    <string name="filter_browse_settings">Фильтр</string>
+    <string name="sort_browse_settings">Сортировка</string>
+
+    <!-- Settings options -->
+    <!-- General -->
+    <string name="language_option">Язык приложения</string>
+    <string name="dark_theme_option">Тёмная тема</string>
+    <string name="pure_dark_option">Черная тема (OLED)</string>
+    <string name="theme_contrast_option">Контраст темы</string>
+    <string name="app_theme_option">Тема приложения</string>
+    <string name="check_for_updates_option">Проверить на обновления</string>
+    <string name="check_for_updates_option_desc">Проверка на обновления при запуске</string>
+    <string name="double_press_exit_option">Нажать дважды для выхода</string>
+    <string name="double_press_exit_option_desc">Нажмите дважды, для выхода из приложения</string>
+
+    <!-- Reader -->
+    <string name="font_family_option">Семейство шрифтов</string>
+    <string name="font_style_option">Стиль шрифта</string>
+    <string name="font_size_option">Размер шрифта</string>
+    <string name="line_height_option">Высота строки</string>
+    <string name="paragraph_height_option">Высота абзаца</string>
+    <string name="paragraph_indentation_option">Отстут обзаца</string>
+    <string name="color_preset_option">Цветовые предустановки</string>
+    <string name="background_color_option">Цвета заднего фона</string>
+    <string name="font_color_option">Цвет шрифта</string>
+    <string name="side_padding_option">Боковой отступ</string>
+    <string name="double_click_translation_option">Перевод двойным нажатием</string>
+    <string name="double_click_translation_option_desc">Дважды нажмите по абзацу для перевода</string>
+    <string name="fast_color_preset_change_option">Быстрая смена цветовой предустановки</string>
+    <string name="fast_color_preset_change_option_desc">Проведите влево или вправо для смены предустановки</string>
+    <string name="text_alignment_option">Выравнивание текста</string>
+
+    <!-- Browse -->
+    <string name="letter_spacing_option">Межбуквенное расстояние</string>
+    <string name="browse_files_structure_option">Структура файлов</string>
+    <string name="browse_layout_option">Режим отображения</string>
+    <string name="browse_grid_size_option">Размер сетки</string>
+    <string name="browse_pin_favorite_directories_option">"Закрепить любимые директории "</string>
+    <string name="browse_pin_favorite_directories_option_desc">"         Закрепить ваши любимые директории на верху экрана     "</string>
+
+    <!-- Color presets -->
+    <string name="red_color">Красный</string>
+    <string name="green_color">Зелёный</string>
+    <string name="blue_color">Синий</string>
+    <string name="color_preset_placeholder">Назвать предустановку…</string>
+
+    <!-- Dark Theme properties -->
+    <string name="dark_theme_off">Отключена</string>
+    <string name="dark_theme_on">Включена</string>
+    <string name="dark_theme_follow_system">Системная</string>
+
+    <!-- Pure Dark properties -->
+    <string name="pure_dark_off">Отключена</string>
+    <string name="pure_dark_on">Включена</string>
+    <string name="pure_dark_power_saver">Экономия</string>
+
+    <!-- Theme Contrast properties -->
+    <string name="theme_contrast_standard">Стандартный</string>
+    <string name="theme_contrast_medium">Средний</string>
+    <string name="theme_contrast_high">Высокий</string>
+
+    <!-- Font Style properties -->
+    <string name="font_style_italic">Курсив</string>
+    <string name="font_style_normal">Нормальный</string>
+
+    <!-- Files Structure properties -->
+    <string name="files_structure_all">Все файлы</string>
+    <string name="files_structure_directory">Директории</string>
+
+    <!-- Browse Layout properties -->
+    <string name="browse_layout_list">Список</string>
+
+    <!-- Browse Grid Size properties -->
+    <string name="browse_layout_grid">Сетка</string>
+    <string name="browse_grid_size_auto">Автоматически</string>
+    <string name="browse_grid_size_per_row">каждый ряд</string>
+
+    <!-- Browse Sort Order properties -->
+    <string name="browse_sort_order_name">В алфавитном порядке</string>
+    <string name="browse_sort_order_file_format">Формат файла</string>
+    <string name="browse_sort_order_file_type">Тип файла</string>
+    <string name="browse_sort_order_last_modified">Последнее изменение</string>
+    <string name="browse_sort_order_file_size">Размер файла</string>
+
+    <!-- Text Alignment properties -->
+    <string name="text_alignment_start">Слева</string>
+    <string name="text_alignment_justify">Равномерно</string>
+    <string name="text_alignment_center">По центру</string>
+
+    <!-- Themes -->
+    <string name="text_alignment_end">Справа</string>
+    <string name="dynamic_theme">Меркурий</string>
+    <string name="blue_theme">Нептун</string>
+    <string name="green_theme">Земля</string>
+    <string name="red_theme">Марс</string>
+    <string name="purple_theme">Юпитер</string>
+    <string name="pink_theme">Сатурн</string>
+    <string name="lavender_theme">Эрис</string>
+    <string name="marsh_theme">Плутон</string>
+    <string name="yellow_theme">Венера</string>
+    <string name="aqua_theme">Уран</string>
+
+    <!-- Toast messages -->
+    <string name="press_again_toast">Нажмите еще раз, чтобы выйти</string>
+    <string name="books_added">Выбранные книги успешно добавлены.</string>
+    <string name="books_moved">Выбранные книги успешно перемещены.</string>
+    <string name="books_deleted">Книги успешно удалены.</string>
+    <string name="cover_image_changed">Обложка изменена успешно.</string>
+    <string name="cover_image_deleted">Обложка успешно удалена.</string>
+    <string name="book_deleted">Книга успешно удалена.</string>
+    <string name="book_moved">Книга успешно перемщена.</string>
+    <string name="copied">Скопировано</string>
+    <string name="history_deleted">История успешно удалена.</string>
+    <string name="no_updates">Установлена последняя версия.</string>
+    <string name="cover_reset">Обложка была сброшена успешно.</string>
+
+    <!-- Snackbar messages -->
+    <string name="history_element_deleted">Элемент истории успешно удалён.</string>
+    <string name="file_not_found">Файл \"%1$s\" не найден.</string>
+    <string name="book_updated">Текст книги был успешно обновлён.</string>
+    <string name="nothing_changed">Текст книги актуален.</string>
+
+    <!-- DropDown properties -->
+    <string name="move_this_book">Переместить</string>
+    <string name="delete_this_book">Удалить</string>
+    <string name="details_book">Детали</string>
+
+    <!-- BookInfo details -->
+    <string name="file_name">Имя файла</string>
+    <string name="file_path">Путь к файлу</string>
+    <string name="file_last_opened">Открыт последний раз</string>
+    <string name="file_size">Размер файла</string>
+    <string name="unknown">Неизместно</string>
+
+    <!-- Browse -->
+    <string name="internal_storage">Внутренние хранилище</string>
+
+    <!-- Reader -->
+    <string name="loading">Загрузка…</string>
+    <string name="happy_reading">Приятного чтения!</string>
+    <string name="thanks_for_reading">"         Спасибо, что прочитали \"%1$s\" с нами.         Мы надеемся, книга вам понравилась!     "</string>
+    <string name="letters_and_words">%1$s букв(а), %2$s слов.</string>
+
+    <!-- About -->
+    <string name="app_version_option">Версия приложения</string>
+    <string name="app_version_option_desc_1">Book\'s Story v%1$s</string>
+    <string name="app_version_option_desc_2">Нажмите для проверки обновлений</string>
+    <string name="report_bug_option">Сообщить об ошибке</string>
+    <string name="whats_new_option">Что нового</string>
+    <string name="licenses_option">Лицензии с открытым исходным кодом</string>
+    <string name="credits_option">Заслуги</string>
+    <string name="help_translate_option">Помощь в переводе</string>
+    <string name="slava_ukraini">Слава Украине!</string>
+
+    <!-- Credits -->
+    <string name="credits_design">Дизайн</string>
+    <string name="credits_icon">Иконки</string>
+    <string name="credits_updates">Управление новыми обновлениями</string>
+    <string name="credits_fonts">Шрифты</string>
+    <string name="credits_translation">Перевод</string>
+    <string name="credits_contribution">Вклад</string>
+    <string name="credits_ideas">Идеи</string>
+
+    <!-- Help -->
+    <string name="help_clickable_note_1">На</string>
+    <string name="help_clickable_note_2">такой подсвеченный текст</string>
+    <string name="help_clickable_note_3">"         можно нажать.         Также можно скрыть подсказку, нажав на иконку. Попробуйте!     "</string>
+    <string name="help_clickable_note_action">На меня можно нажать!</string>
+
+    <string name="help_title_how_to_find_books">Как мне искать и скачивать?</string>
+    <string name="help_desc_how_to_find_books">"         Вы можете найти желаемые книги на сайтах из предоставленной заметки        или можете использовать текстовое поле для поиска книг онлайн.     "</string>
+    <string name="help_field_placeholder">Название книги</string>
+    <string name="help_field_support">Полезные сайты с книгами:</string>
+    <string name="help_field_error">Имя книги не должно быть пустым</string>
+
+    <string name="help_title_how_to_add_books">Как добавить книги в Библиотеку?</string>
+    <string name="help_desc_how_to_add_books_1">Перейти в</string>
+    <string name="help_desc_how_to_add_books_2">Поиск</string>
+    <string name="help_desc_how_to_add_books_3">"         Якщо ви не бачите завантажені книги, спробуйте оновити список, потягнувши його вниз.         Переконайтеся, що ваші книги мають підтримуваний формат файлу.         Потім натисніть на книгу, щоб вибрати її, або утримуйте, щоб показати її місцезнаходження.         Після того, як ви вибрали всі потрібні книги, натисніть на іконку з галочкою у верхньому правому куті,         зачекайте поки всі книги завантажаться, і натисніть «Додати».         Тепер ви повинні побачити всі додані вами книги в     "</string>
+    <string name="help_desc_how_to_add_books_4">Бібліотеці</string>
+
+    <string name="help_title_how_to_customize_app">Як мені налаштувати застосунок?</string>
+    <string name="help_desc_how_to_customize_app_1">Перейдіть в</string>
+    <string name="help_desc_how_to_customize_app_2">Налаштування</string>
+    <string name="help_desc_how_to_customize_app_3">
+        Ви можете зробити це з екранів Бібліотека, Історія та Огляд
+        натиснувши на три крапки в правому верхньому кутку і вибравши
+        «Налаштування» з випадаючого списку.
+        Після цього ви побачите всі доступні налаштування для цього застосунку.
+        Не соромтеся експерементувати з ними!
+    </string>
+
+    <string name="help_title_how_to_move_or_delete_books">Як мені перемістити або видалити книги?</string>
+    <string name="help_desc_how_to_move_or_delete_books_1">Перейдіть в</string>
+    <string name="help_desc_how_to_move_or_delete_books_2">Бібліотеку</string>
+    <string name="help_desc_how_to_move_or_delete_books_3">
+        Утримуйте обкладинку першої книги, поки вона не буде вибрана,
+        тепер ви можете просто натиснути на всі обкладинки книг, які ви хочете вибрати.
+        Ви також можете вибрати книги в декількох категоріях.
+        Після того, як ви вибрали всі бажані книги, ви можете натиснути на іконку зі стрілкою,
+        щоб перемістити та на іконку кошика, щоб видалити книги.
+    </string>
+
+    <string name="help_title_how_to_edit_book">Як мені відредагувати книгу?</string>
+    <string name="help_desc_how_to_edit_book_1">Перейдіть в</string>
+    <string name="help_desc_how_to_edit_book_2">Бібліотеку</string>
+    <string name="help_desc_how_to_edit_book_3">
+        та натісніть на обкладинку книги, щоб побачити подробиці книги.
+        Тепер ви можете утримувати назву, автора або опис книги, щоб відредагувати її
+        або обкладинку, щоб змінити, скинути або видалити обкладинку.
+    </string>
+
+    <string name="help_title_how_to_read_book">Як мені читати книгу?</string>
+    <string name="help_desc_how_to_read_book_1">Перейдіть в</string>
+    <string name="help_desc_how_to_read_book_2">Бібліотеку</string>
+    <string name="help_desc_how_to_read_book_3">
+        Щоб почати читати книгу, натисніть на кнопку в правому нижньому куті книги, яку ви хочете читати.
+        Також ви можете почати читати книгу, натиснувши на її обкладинку, щоб побачити подробиці книги,
+        а потім натиснути кнопку в правому нижньому куті.
+        Прогрес буде збережено і відновлено автоматично.
+        Ви можете показати верхню і нижню панелі, натиснувши в будь-якому місці екрану.
+        Натиснувши на назву книги, ви перейдете до подробиць книги.
+        Натиснувши на іконку з шестернею, ви побачите налаштування Читача.
+        Ви можете використовувати повзунок нижньої панелі для зміни прогресу.
+    </string>
+
+    <string name="help_title_how_to_customize_reader">Як мені налаштувати Читач?</string>
+    <string name="help_desc_how_to_customize_reader_1">
+        Почніть читати книгу(див: Як мені читати книгу?),
+        після цього покажіть верхню і нижню панелі, натиснувши в будь-якому місці екрану.
+        Потім натисніть на іконку з шестернею в правому верхньому кутку.
+        Це покаже всі налаштування Читача.
+        Другий спосіб - перейти в
+    </string>
+    <string name="help_desc_how_to_customize_reader_2">
+        Налаштування
+    </string>
+    <string name="help_desc_how_to_customize_reader_3">
+        та вибрати категорію Читач, щоб налаштувати Головні параметри,
+        або категорію Зовнішній Вигляд, щоб налаштувати параметри Кольорів.
+    </string>
+
+    <string name="help_title_how_to_update_book">Як мені оновити книгу?</string>
+    <string name="help_desc_how_to_update_book_1">Перейдіть в</string>
+    <string name="help_desc_how_to_update_book_2">Бібліотеку</string>
+    <string name="help_desc_how_to_update_book_3">
+        та натісніть на обкладинку книги, щоб побачити подробиці книги.
+        Потягніть екран вниз або натисніть на іконку оновлення у верхньому правому куті, щоб оновити книгу.
+        Якщо файл книги змінився, ви можете підтвердити і оновити книгу або скасувати оновлення.
+    </string>
+
+    <string name="help_title_how_to_manage_history">Як керувати історією?</string>
+    <string name="help_desc_how_to_manage_history_1">Перейдіть в</string>
+    <string name="help_desc_how_to_manage_history_2">Історію</string>
+    <string name="help_desc_how_to_manage_history_3">
+        Якщо натиснути кнопку видалення праворуч від елемента історії, його буде видалено.
+        Історія впливає на порядок книг в Бібліотеці,
+        видалення елемента історії призведе до зміни порядку книг.
+        Остання відкрита книга завжди є першою в Бібліотеці та Історії.
+    </string>
+
+    <string name="help_title_how_to_use_tooltip">Як використовувати підказки?</string>
+    <string name="help_desc_how_to_use_tooltip_1">
+        Більшість кнопок-іконок мають підказки, вони можуть допомогти якщо ви не знаєте, що робить кнопка-іконка.
+        Щоб показати підказку, ви можете затиснути кнопку-іконку.
+    </string>
+
+    <string name="help_title_how_to_use_double_click_translation">
+        Як використовувати переклад подвійним кліком?
+    </string>
+    <string name="help_desc_how_to_use_double_click_translation_1">
+        Спочатку перейдіть в налаштування Читача(див: Як мені налаштувати Читач?),
+        потім увімкніть відповідне налаштування. Після цього,
+        почніть читати книгу(див: Як мені читати книгу?).
+        Тепер якщо ви двічі клацните на бажаний параграф,
+        відкриється зовнішній перекладач з текстом параграфу.
+    </string>
+
+    <string name="help_title_how_to_create_color_presets">
+        Як створити та редагувати пресети кольорів?
+    </string>
+    <string name="help_desc_how_to_create_color_presets_1">
+        Перейдіть в налаштування Зовнішнього Вигляду(див: Як мені налаштувати Читач?).
+        Ви можете редагувати всі налаштування пресету кольорів
+        у віконці під «Пресет Кольорів» в підкатегорії «Кольори».
+        Щоб створити новий пресет кольорів, натисніть на кнопку-іконку «Додати».
+        Є багато шляхів редагування пресета кольорів:
+        натиснувши на текстове поле, ви можете змінити назву пресету кольорів;
+        рухаючи повзунки, ви можете змінити кольори пресета кольорів;
+        натиснувши на кнопку-іконку «Перетасувати» ви можете перетасувати всі кольори.
+        Якщо ви хочете видалити пресет кольорів, натисніть на кнопку-іконку «Видалити».
+    </string>
+
+    <string name="help_title_how_to_use_color_presets">
+        Як використовувати пресети кольорів?
+    </string>
+    <string name="help_desc_how_to_use_color_presets_1">
+        Перейдіть в налаштування Зовнішнього Вигляду(див: Як мені налаштувати Читач?).
+        Ви можете вибрати який пресет кольорів використовувати в налаштуванні «Пресет Кольорів».
+        Натисніть на бажаний пресет кольорів, щоб вибрати його, це також змінить ваші кольори в Читачі.
+        Якщо ви хочете змінити порядок пресета кольорів,
+        виберіть його та затисніть кнопку-іконку «Тримач»,
+        після цього перемістіть його до бажаного місця.
+        Ви можете швидко змінювати пресети кольорів увімкнувши відповідне
+        налаштування в підкатегорії «Кольори» налаштувань Зовнішнього Вигляду,
+        та потім провівши вліво або вправо в Читачі, щоб швидко змінити пресет кольорів.
+    </string>
+
+
+    <!-- Start -->
+    <string name="start_welcome">Вітаємо в Book\'s Story!</string>
+    <string name="start_welcome_desc">
+        У світ, де слова чарують, вчать та ведуть у неймовірні пригоди!
+        Давайте дещо налаштуємо!
+    </string>
+    <string name="start_language_preferences">Языковые настройки</string>
+    <string name="start_theme_preferences">Настройки тем</string>
+    <string name="start_permissions_preferences">Разрешения</string>
+    <string name="start_permissions_granted">Выдано</string>
+    <string name="start_permissions_storage">Доступ к хранилищу</string>
+    <string name="start_permissions_storage_desc">Потрібний, щоб просканувати ваш пристрій та знайти книги</string>
+    <string name="start_permissions_notifications">"Отправка уведомлений "</string>
+    <string name="start_permissions_notifications_desc">Потрібний, щоб перевірити застосунок на нову версію</string>
+    <string name="start_done">Всё готово!</string>
+    <string name="start_done_desc">
+        Ви успішно закінчили базове налаштовування застосунку.
+        Бажаєте дізнатися, як користуватися застосунком, прочитавши екран Допомоги?
+    </string>
+
+    <!-- Font families -->
+    <string name="default_font">По умолчанию</string>
+
+    <!-- History -->
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+
+    <!-- Content description -->
+    <string name="refresh_book_content_desc">Обновить книгу</string>
+    <string name="continue_reading_content_desc">Продолжить чтение</string>
+    <string name="go_back_content_desc">Назад</string>
+    <string name="cover_image_content_desc">Обложка</string>
+    <string name="open_reader_settings_content_desc">Настройки читалки</string>
+    <string name="top_app_bar_anim_content_desc">Анимация верхней панели</string>
+    <string name="file_icon_content_desc">Файл</string>
+    <string name="directory_icon_content_desc">Директория</string>
+    <string name="favorite_directory_content_desc">Любимая директория</string>
+    <string name="sort_order_content_desc">Порядок сортировки</string>
+    <string name="path_arrow_icon_content_desc">Стрелка пути</string>
+    <string name="checkbox_content_desc">Галочка</string>
+    <string name="show_dropdown_content_desc">Выпадающий список</string>
+    <string name="cover_image_not_found_content_desc">Обложка не найдена</string>
+    <string name="apply_changes_content_desc">Применить изменения</string>
+    <string name="error_content_desc">Ошибка</string>
+    <string name="search_content_desc">Поиск</string>
+    <string name="clear_selected_items_content_desc">Очистить выбранное</string>
+    <string name="add_files_content_desc">Добавить файлы</string>
+    <string name="select_all_files_content_desc">Выбрать все файлы</string>
+    <string name="exit_search_content_desc">Выйти из поиска</string>
+    <string name="delete_whole_history_content_desc">Удалить всю историю</string>
+    <string name="move_books_content_desc">Переместить выбранные книги</string>
+    <string name="delete_books_content_desc">Удалить выбранные книги</string>
+    <string name="revert_content_desc">Повернуть</string>
+    <string name="selected_content_desc">Выбрано</string>
+    <string name="app_icon_content_desc">Иконка приложения</string>
+    <string name="note_content_desc">Заметка</string>
+    <string name="delete_history_element_content_desc">Удалить элемент истории</string>
+    <string name="library_content_desc">Ваша библиотека</string>
+    <string name="history_content_desc">История чтения</string>
+    <string name="browse_content_desc">Добавить книги</string>
+    <string name="arrow_content_desc">Стрелка</string>
+    <string name="arrow_anim_content_desc">Анимация стрелки</string>
+    <string name="required_content_desc">Необходимо</string>
+    <string name="reset_start_content_desc">Скинути початковий посібник</string>
+    <string name="exit_editing_content_desc">Выйти из режима редактирования</string>
+    <string name="open_in_web_content_desc">Открыть браузер</string>
+    <string name="delete_color_preset_content_desc">Удалить цветовую предустановку</string>
+    <string name="create_color_preset_content_desc">Создать цветовую предустановку</string>
+    <string name="shuffle_color_preset_content_desc">Перемешать цвета</string>
+    <string name="tryzub_content_desc">Трезубец</string>
+    <string name="github_profile_content_desc">GitHub Профиль</string>
+    <string name="drag_content_desc">Тянуть</string>
+    <string name="filter_content_desc">Фильтр</string>
+
+</resources>
